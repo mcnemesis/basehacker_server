@@ -1,0 +1,88 @@
+$def with (params)
+<!doctype html>
+<html>
+<head>
+        <title>$params['APP_TITLE']</title>
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Days+One);
+
+            .banner img {
+                height : 400px;
+            }
+            body {
+                background-color : #141414;
+                font-family: 'Days One', sans-serif !important;
+            }
+
+            .dark_gradient_panel{
+            border:1px solid #616261; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #7d7e7d;
+             background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7e7d), to(#0e0e0e));
+             background-image: -webkit-linear-gradient(top, #7d7e7d, #0e0e0e);
+             background-image: -moz-linear-gradient(top, #7d7e7d, #0e0e0e);
+             background-image: -ms-linear-gradient(top, #7d7e7d, #0e0e0e);
+             background-image: -o-linear-gradient(top, #7d7e7d, #0e0e0e);
+             background-image: linear-gradient(to bottom, #7d7e7d, #0e0e0e);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7d7e7d, endColorstr=#0e0e0e);
+            }
+
+            .dark_gradient_panel:hover{
+             border:1px solid #4a4b4a; background-color: #646464;
+             background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), top(#282828));
+             background-image: -webkit-linear-gradient(top, #646464, #282828);
+             background-image: -moz-linear-gradient(top, #646464, #282828);
+             background-image: -ms-linear-gradient(top, #646464, #282828);
+             background-image: -o-linear-gradient(top, #646464, #282828);
+             background-image: linear-gradient(to bottom, #646464, #282828);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#646464, endColorstr=#282828);
+            }
+
+            .center {
+                text-align: center ;
+                margin-left: auto ;
+                margin-right: auto ;
+                margin-top: 5%;
+                margin-bottom: auto ;
+            }
+
+            #content {
+                width : 50%;
+                height: 80%;
+            }
+
+            #content a {
+                text-decoration : none;
+                }
+
+            #logo {
+                color : #33FF66;
+            }
+
+            #footer {
+                color : #33CC99;
+            }
+
+            #thanks {
+                color : #8C8C8C;
+                font-size : small;
+                }
+
+
+        </style>
+</head>
+<body>
+    <div id="content" class="dark_gradient_panel center">
+        <a href="$params['APP_URI']" >
+        <div id="logo">
+            <h1>$params['APP_TITLE']</h1>
+        </div>
+        <div class="banner">
+            <img src="static/images/Cypherpunk_by_Cassandra28.jpg" />
+        </div>
+        <div id="footer">
+             GET THE APP | &copy; $params['APP_TITLE'], 2013. | Nemesis Fixx
+        </div>
+    </a>
+        <div id="thanks" >
+            Image Credit to <a target="_blank" href="http://cassandra28.deviantart.com/art/Cypherpunk-25523666">~Cassandra28</a>
+        </div>
+    </div>
+    </body>
+</html>
