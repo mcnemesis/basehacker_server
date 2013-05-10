@@ -49,10 +49,13 @@ class hello:
             'BASE_URI' : BASE_URI,
             })
 
+def get_fortune():
+    return subprocess.Popen(['fortune'], stdout=subprocess.PIPE).communicate()[0]
+
 class fortune:
     '''Just return a good ol' fortune cookie...'''
     def GET(self):
-        return j_s(subprocess.check_output('fortune'))
+        return j_s( get_fortune() )
     def POST(self):
         return j_e("Not Supported")
 
