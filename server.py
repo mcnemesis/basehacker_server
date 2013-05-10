@@ -3,6 +3,7 @@ import web
 import subprocess
 
 urls = (
+  '', 'hello',
   '/', 'hello',
   '/fortune', 'fortune',
 )
@@ -30,7 +31,7 @@ def j_s(msg,status='200 OK',**kwargs):
     return json.dumps(d)
 
 #--------- Templates ----------
-render = web.template.render('/media/planet/LABS/ACTIVEWORKS/basehacker_server/templates/', cache=False)
+render = web.template.render('/var/opt/basehacker_server/templates/', cache=False)
 
 
 #~~~~~~~~~~~~~~ VIEWS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
