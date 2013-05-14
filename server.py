@@ -10,8 +10,11 @@ urls = (
 
 #------------- STATIC --------------
 BASE_URI = '/basehacker'
-APP_TITLE = 'baseH4CK3R'
-APP_URI = '%s/static/app/%s.apk' % (BASE_URI, APP_TITLE)
+APP_TITLE = 'Base Hacker'
+APK_NAME = 'b45EH4CK3R.apk'
+APP_URI = '%s/static/app/%s' % (BASE_URI, APK_NAME)
+BACKGROUND_MUSIC = '%s/static/audio/all_credit_to_phone_booth_robbers__greasy_mechanism.ogg' % (BASE_URI)
+FEATURE_REQ_MAIL = 'joewillrich 4t gmail D0t com'
 
 #------------- GLOBALS -------------
 #db = web.database(dbn='postgres', user='postgres', pw='postgres', db='globalclip')
@@ -47,6 +50,8 @@ class hello:
             'APP_TITLE' : APP_TITLE,
             'APP_URI' : APP_URI,
             'BASE_URI' : BASE_URI,
+            'BACKGROUND_MUSIC' : BACKGROUND_MUSIC,
+            'FEATURE_REQ_MAIL' : FEATURE_REQ_MAIL,
             })
 
 def get_fortune():

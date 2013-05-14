@@ -38,7 +38,6 @@ $def with (params)
                 text-align: center ;
                 margin-left: auto ;
                 margin-right: auto ;
-                margin-top: 5%;
                 margin-bottom: auto ;
             }
 
@@ -68,6 +67,7 @@ $def with (params)
         </style>
 </head>
 <body>
+    <audio id="player" src="$params['BACKGROUND_MUSIC']" loop="true" autoplay="true"></audio>
     <div id="content" class="dark_gradient_panel center">
         <a href="$params['APP_URI']" >
         <div id="logo">
@@ -82,6 +82,8 @@ $def with (params)
     </a>
         <div id="thanks" >
             Image Credit to <a target="_blank" href="http://cassandra28.deviantart.com/art/Cypherpunk-25523666">~Cassandra28</a>
+            <br/>
+            New Feature Requests : $params['FEATURE_REQ_MAIL']
         </div>
     </div>
     </body>
